@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+@import url('https//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@font-face {
+    font-family: 'simple-line-icons';
+    src: url('../fonts/Simple-Line-Icons.eot?v=2.4.0');
+    src: url('../fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('../fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('../fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('../fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('../fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+/* Starting from here is all the codes that target stuff that can be applied all throughout the webpage */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Starting from here is all the codes that targets specific parts of the webpage */
+
+header {
+    /* background-color: aqua; */
+    z-index: 9;
+    width: 100%;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+    .innerheader {
+        width: 1240px;
+        height: 97px;
+        padding: 0px 100px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+        #title {
+            width: 220px;
+            /* width: 360px; */
+            font-size: 27px;
+            font-family: 'Nanum Gothic Coding', monospace;
+            flex-grow: initial;
+            line-height: 97px;
+        }
+
+
+        .menu {
+            width: fit-content;
+            /* width: 480px; */
+            height: 97px;
+            text-align: center;
+            line-height: 90px;
+            margin: 0px auto;
+
+        }
+            .selection:hover {
+                color: rgb(43, 75, 180);
+                font-weight: 900;
+                font-size: large;
+            }
+            .selection {
+                font-size: 15px;
+                font-weight: 400;
+                font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+                margin: 10px;
+                letter-spacing: 0.5px;
+                
+                transition: 0.4s;
+                cursor: pointer;
+            }
+
+
+
+        .toprightbutton {
+            width: 220px;
+            /* width: 360px; */
+            height: 97px;
+            display: flex;
+            flex-flow: row-reverse nowrap;
+        }
+            .buttonitself:hover {
+                background-color: rgb(43, 75, 180);
+                transform: scale(1.2);
+            }
+            .buttonitself:hover .icon-note{
+                color:white;
+            }
+            .buttonitself:hover .buttontext{
+                color:white;
+            }
+            .buttonitself {
+                position: relative;
+                /* left: 15px; */
+                top: 30px;
+                width: 160px;
+                height: 30px;
+                border: rgb(224, 224, 224) solid 1px;
+                text-align: center;
+
+                transition: 0.4s;
+                cursor: pointer;
+            }
+            .icon-note {
+                font-family: 'simple-line-icons';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                position: relative;
+                top: 1px;
+                color: #606060;
+                margin-right: 1px;
+            }
+            .buttontext {
+                font-size: 13px;
+                font-family: 'spoqa-han-sans', 'sans-serif';
+                text-align: center;
+                line-height: 30px;
+                color: #606060;
+                }
+
+
+
+#video {
+    position: absolute;
+    top: 97px;
+    left: 0px;
+    width: 100%;
+    height: 550px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+    iframe {
+        position: absolute;
+        width: 149%;
+        height: 149%;
+        left: -350px;
+        top: -20px;
+    }
+
+
+.info {
+    position: absolute;
+    top: 647px;
+    left: 0;
+    width: 100%;
+    height: 1628px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .moto {
+        width: 100%;
+        height: 190px;
+        text-align: center;
+        position: relative;
+        top: 30px;
+        margin-bottom: 46px;
+    }
+        #mototitle {
+            font-size: 26px;
+            font-weight: 700;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            margin: 20px;
+            margin-bottom: 30px;
+        }
+        #motosubtext {
+            font-size: 15px;
+            font-weight: 400;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            letter-spacing: 0px;
+            margin-bottom: 5px;
+        }
+        #motosubtext2 {
+            font-size: 15px;
+            font-weight: 400;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            letter-spacing: 0px;
+        }
+
+    
+    
+    .selectboxes {
+        width: 100%;
+        height: 247px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+        #box1:hover {
+            transform: scale(1.1);
+        }
+        #box2:hover {
+            transform: scale(1.1);
+        }
+        #box3:hover {
+            transform: scale(1.1);
+        }
+        #box1 {
+            background-color: #2c44aa;
+            width: 346.5px;
+            height: 217px;
+            color: white;
+
+            cursor: pointer;
+        }
+
+        #box2 {
+            background-color: #001255;
+            width: 346.5px;
+            height: 217px;
+            color: white;
+
+            cursor: pointer;
+        }
+        #box3 {
+            background-color: #2c44aa;
+            width: 346.5px;
+            height: 217px;
+            color: white;
+
+            cursor: pointer;
+        }
+        .textgroup {
+            margin: 25px;
+        }
+        .boxtextbold {
+            font-size: 16.5px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .boxtext {
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .boxtextclick {
+            font-weight: 600;
+            font-size: 13px;
+            margin-top: 85px;
+            margin-bottom: 30px;
+        }
+
+
+    .documents {
+        width: 100%;
+        height: 309px;
+        margin-top: 15px;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+        .docuboard {
+            width: 1039.5px;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+            .notify {
+                width: 1039.5;
+                height: 33px;
+                line-height: 28px;
+                display: flex;
+                flex-flow: row nowrap;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                border-bottom: 1px solid rgb(221, 220, 220);
+            }
+                .textclickybox {
+                    width: 100%;
+                    height: fit-content;
+                    line-height: 28px;
+                    display: flex;
+                    flex-flow: row nowrap;
+
+                    cursor: pointer;
+                }
+            
+
+                    .notifytype {
+                        margin-right: 5px;
+                        color: grey;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                    .notifytitle {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    .timedate {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: rgb(109, 109, 109);
+                        margin-right: 0;
+                        margin-left: auto;
+                    }
+
+    
+
+.opentext {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 394px;
+}
+    .promise {
+        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .promisetitle {
+            font-size: 27px;
+            font-weight: bold;
+            margin: 20px;
+            margin-bottom: 12px;
+            margin-top: 70px;
+        }
+        .promisetext1 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .promisetext2 {
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 120px;
+        }
+
+
+
+.webpageend {
+    background-color: #001255;
+    width: 100%;
+    height: 427px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+    .weblinklist {
+        width: 1040px;
+        height: 279px;
+        display: flex;
+        flex-flow: row nowrap;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.349);
+    }
+        .list {
+            width: 170px;
+            height: fit-content;
+            margin-right: 50px;
+            margin-top: 42px;
+            color: white;
+        }
+        .listtitle {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 29px;
+
+            cursor: pointer;
+        }
+        .listselect {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 8px;
+
+            cursor: pointer;
+        }
+
+    
+        .final {
+            width: 100%;
+            height: 145px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+            .iconsincluder {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                margin-top: 5px;
+            }
+                .icon {
+                    width: 50px;
+                    height: 70px;
+                    text-align: center;
+                    line-height: 80px;
+                }
+                    .iconbutton {
+                        width: fit-content;
+                        height: fit-content;
+                    }
+                    .fab {
+                        color: white;
+                    }
+                    .fa-facebook-f {
+                        font-size: 14px;
+                    }
+                    .fa-youtube {
+                        font-size: 14px;
+                    }
+            
+            .contacts {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+            }
+                .contactlist {
+                    color: white;
+                    font-size: 11px;
+                    font-weight: 400;
+                    margin: 5px;
+                    margin-top: 15px;
+                    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+                    letter-spacing: 0px;
+                }
